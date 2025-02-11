@@ -16,6 +16,9 @@ export default class NhkCompA extends Component {
                 <h3> Hiển thị dữ liệu từ props</h3>
                 <p>Name: {this.props.NhkName}</p>
                 <p>Address: {this.props.NhkAddress}</p>
+                <p>Date:{this.props.NhkDate}</p>
+                <p>Phone:{this.props.NhkPhone}</p>
+                <p>MSV:{this.props.NhkMSV}</p>
             </div>
         )
     }
