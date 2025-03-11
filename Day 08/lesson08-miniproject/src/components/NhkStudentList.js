@@ -4,23 +4,32 @@ import NhkStudent from "./NhkStudent";
 class NhkStudentList extends Component {
   // Hàm xử lý sự kiện xem
   NhkHandleView = (NhkStudent) => {
-    // Chuyển dữ liệu lên NhkApp
     this.props.onNhkHandleView(NhkStudent);
   };
 
+  // Hàm xử lý sự kiện sửa
+  NhkHandleEdit = (NhkStudent) => {
+    this.props.onNhkHandleEdit(NhkStudent);
+  };
+
+  // Hàm xử lý sự kiện xóa
+  NhkHandleDelete = (NhkId) => {
+    this.props.onNhkHandleDelete(NhkId);
+  };
+
   render() {
-    // lấy dữ liệu từ props của NhkApp chuyển xuống
     let { renderNhkStudents } = this.props;
     console.log("List:", renderNhkStudents);
 
-    // chuyển dữ liệu vào NhkStudent để hiển thị
     let NhkElementStudent = renderNhkStudents.map((NhkItem, index) => {
       return (
         <NhkStudent
-          key={index}
+          key={NhkItem.nhkId} // Dùng ID làm key để tránh lỗi
           NhkIndex={index + 1} // Truyền số thứ tự vào component con
           renderNhkStudent={NhkItem}
           onNhkHandleView={this.NhkHandleView}
+          onNhkHandleEdit={this.NhkHandleEdit}
+          onNhkHandleDelete={this.NhkHandleDelete}
         />
       );
     });
