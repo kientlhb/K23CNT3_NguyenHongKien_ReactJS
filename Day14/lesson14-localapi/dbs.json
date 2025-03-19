@@ -1,0 +1,32 @@
+{
+    "users":[
+        {
+            "NvkFullname":"Nguyen Hong Kien",
+            "NvkEmail":"kientlhb3@gmail.com",
+            "NvkPhone":"0946892616",
+            "NvkActive":true,
+            "NvkId":"2310900055"
+        },
+        {
+            "NvkFullname":"Nguyen thit lon",
+            "NvkEmail":"kientlhb2@gmail.com",
+            "NvkPhone":"098491517",
+            "NvkActive":true,
+            "NvkId":"231090008"
+        },
+        {
+            "NvkFullname":"Nguyen thit heo",
+            "NvkEmail":"kientlhb1@gmail.com",
+            "NvkPhone":"09849151",
+            "NvkActive":false,
+            "NvkId":"231090002"
+        },
+        {
+            "NvkFullname":"Nguyen thit ga",
+            "NvkEmail":"kientlhb3@gmail.com",
+            "NvkPhone":"098491556",
+            "NvkActive":true,
+            "NvkId":"231090054"
+        }
+    ]
+}
